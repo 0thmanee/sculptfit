@@ -1,0 +1,23 @@
+.more_container {
+  padding-top: 15rem;
+}
+.more_detail {
+  margin-bottom: 4.8rem;
+}
+.more_img {
+  width: 70%;
+  margin-bottom: 3.2rem;
+}
+@media (max-width: 48em) {
+  .more_img {
+    width: auto;
+  }
+}
+.more_container .parag {
+  width: 70%;
+}
+@media (max-width: 48em) {
+  .more_container .parag {
+    width: auto;
+  }
+}

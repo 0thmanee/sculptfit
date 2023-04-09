@@ -1,0 +1,144 @@
+:root {
+  --primary-color: #ee780d;
+  --hover-color: #b85b05;
+  --title-color: #ffffff;
+  --p-color: #8f8f8f;
+  --bcg-color: #000;
+  --light-bcg: #313131;
+  --section-padding: 9rem;
+  --main-line-height: 1.5;
+  --main-transition: 0.3s;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+  background-color: var(--bcg-color);
+  position: relative;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+/* SMALL DEVICES: 768px */
+@media (min-width: 48em) {
+  .container {
+    width: 75rem;
+  }
+}
+/* MEDIUM DEVICES: 992px */
+@media (min-width: 62em) {
+  .container {
+    width: 97rem;
+  }
+}
+@media (max-width: 70em) {
+}
+/* LARGE DEVICES: 1200px */
+@media (min-width: 75em) {
+  .container {
+    width: 117rem;
+  }
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.hidden {
+  display: none;
+}
+.btn {
+  font-size: 2rem;
+  padding: 1.75rem 0;
+  border-radius: 15rem;
+  transition: all var(--main-transition);
+  cursor: pointer;
+}
+.stroke {
+  color: var(--bcg-color);
+  background-color: inherit;
+  text-shadow: -0.1rem -0.1rem 0 #fff, 0.1rem -0.1rem 0 #fff,
+    -0.1rem 0.1rem 0 #fff, 0.1rem 0.1rem 0 #fff;
+}
+.main_heading {
+  margin-bottom: 8rem;
+  text-align: center;
+}
+.main_heading .caption {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.main_heading h2 {
+  font-size: 4.8rem;
+  line-height: 1.1;
+}
+@media (max-width: 62em) {
+  .main_heading {
+    font-size: 3.6rem;
+  }
+}
+@media (max-width: 48em) {
+  .main_heading h2 {
+    font-size: 3.6rem;
+  }
+}
+.sec_heading {
+  font-size: 2rem;
+}
+@media (max-width: 62em) {
+}
+@media (max-width: 48em) {
+}
+.parag {
+  font-size: 1.8rem;
+  line-height: var(--main-line-height);
+  color: var(--p-color);
+}
+@media (max-width: 48em) {
+  .parag {
+    font-size: 1.6rem;
+  }
+}
+.img--hover {
+  position: relative;
+  overflow: hidden;
+}
+.img--hover::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all var(--main-transition);
+}
+.img--hover img {
+  position: relative;
+  transition: all var(--main-transition);
+  overflow: hidden;
+}
